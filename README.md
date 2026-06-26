@@ -1,5 +1,7 @@
 # Escape the Game — Level Editor
 
+Temporarily hosted at: https://escape-the-game.ericbs.dev
+
 A browser-based level editor for the Steam game **Escape the Game** (2016).
 
 ![The editor](docs/editor.png)
