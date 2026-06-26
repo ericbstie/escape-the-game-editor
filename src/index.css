@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #1c1b1f;
+  --color-panel: #232228;
+  --color-panel-hi: #2d2c33;
+  /* Text ramp — all checked for WCAG AA (>=4.5:1) on #232228 panel.
+     ink 12.4:1 · muted 8.4:1 · faint 6.0:1 */
+  --color-ink: #f0ebe1;
+  --color-muted: #c8c2b6;
+  --color-faint: #a8a297;
+  --color-line: #43424b;
+  --color-crayon-pink: #f3a7bb;
+  --color-crayon-mint: #a8e6cf;
+  --color-crayon-blue: #a3d2ec;
+  --color-crayon-peach: #ffd3b6;
+  --color-crayon-lilac: #c9b6e4;
+  --color-crayon-butter: #fbe9a0;
+
+  --font-block: "Nunito", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    @apply text-[#f0ebe1] bg-[#1c1b1f];
+    font-family: "Patrick Hand", "Comic Sans MS", cursive, system-ui;
+  }
+
+  body {
+    @apply w-full h-screen m-0 p-0 overflow-hidden;
+  }
+
+  #root {
+    @apply w-full h-screen;
+  }
+}
+
+/* Themed scrollbars — Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #43424b transparent;
+}
+
+/* Themed scrollbars — Chrome / Safari / Edge */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #43424b;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a5963;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
